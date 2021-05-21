@@ -1,15 +1,15 @@
 create database db_escola;
 use db_escola;
-create table alunes(
+create table tb_alunes(
 id Bigint auto_increment,
 nome varchar(255),
 idade int,
 serie char(1),
-nota decimal,
+nota decimal(10,2),
 primary key(id)
 );
 
-insert into alunes(nome, idade, serie, nota) values
+insert into tb_alunes(nome, idade, serie, nota) values
 ("Agatha", 6, 1, 10),
 ("Pedro", 7, 1, 5.00),
 ("Mauricio", 6, 2, 7.50),
