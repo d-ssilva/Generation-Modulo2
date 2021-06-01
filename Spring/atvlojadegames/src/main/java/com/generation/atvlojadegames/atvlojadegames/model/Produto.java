@@ -20,10 +20,9 @@ public class Produto {
 	private long id;
 	
 	@NotNull
-	@Size(min = 5, max = 50)
+	@Size(min = 1, max = 50)
 	private String nome;	
 	
-	@NotNull
 	private int qtd;
 	
 	@NotNull
