@@ -1,7 +1,6 @@
 package com.generation.atvlojadegames.atvlojadegames.controller;
 
 import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -38,8 +37,8 @@ public class CategoriaController {
 	}
 	
 	@GetMapping("/categoria/{categoria}")	
-	public ResponseEntity<List<Categoria>> GetByTitulo(@PathVariable String genero){
-		return ResponseEntity.ok(categoriaRepository.findAllByGeneroContainingIgnoreCase(genero));
+	public ResponseEntity<List<Categoria>> GetByGenero(@PathVariable String categoria){
+		return ResponseEntity.ok(categoriaRepository.findAllByGeneroContainingIgnoreCase(categoria));
 	}		
 	
 	@PostMapping

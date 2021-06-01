@@ -34,8 +34,14 @@ public class Produto {
 	
 	@ManyToOne
 	@JsonIgnoreProperties("produto")
-	private Categoria categoria_id;
+	private Categoria categoria;
 	
+	public Categoria getCategoria() {
+		return categoria;
+	}
+	public void setCategoria(Categoria categoria) {
+		this.categoria = categoria;
+	}
 	public long getId() {
 		return id;
 	}
@@ -65,9 +71,5 @@ public class Produto {
 	}
 	public void setMidiaFisica(boolean midiaFisica) {
 		this.midiaFisica = midiaFisica;
-	}
-	
-	
-	
-	
+	}	
 }
