@@ -1,5 +1,6 @@
 create database db_farmacia_do_bem;
 use db_farmacia_do_bem;
+
 create table tb_categoria(
 	id bigint auto_increment,
 	nome varchar(50) not null,
