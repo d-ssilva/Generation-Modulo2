@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
 import com.generation.farmalegal.model.Categoria;
 
 @Repository
-public interface CategoriaRepository extends JpaRepository<Categoria, Long> {
-	public List<Categoria> findAllByGrupoContainingIgnoreCase(String grupo);
-	
-}
+public interface CategoriaRepository extends JpaRepository<Categoria, Long> 
+	{
+	public List<Categoria> findAllByGrupoContainingIgnoreCase(String grupo);	
+	}
