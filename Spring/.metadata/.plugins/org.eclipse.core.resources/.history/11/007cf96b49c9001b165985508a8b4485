@@ -1,0 +1,19 @@
+package org.generation.blogPessoal;
+
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
+
+@SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
+public class PostagemTest {
+
+	public Postagem postagem;
+	
+	@Autowired
+	private final Validator validator = Validation.buildDefaultValidatorFactory().getValidator();
+	
+	@BeforeEach
+	public start() {
+		postagem = new Postagem(null, )
+	}
+		
+}

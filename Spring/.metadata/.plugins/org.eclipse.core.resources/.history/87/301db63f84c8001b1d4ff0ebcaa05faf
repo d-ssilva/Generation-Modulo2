@@ -1,0 +1,5 @@
+package com.generation.atvlojadegames.atvlojadegames.repository;
+
+public class UsuarioRepository {
+
+}
